@@ -12,4 +12,14 @@ def uniqueChar(str):
     return True
 
 
-print(uniqueChar('abcc'))
+def uniqueChar1(str):
+    
+    emptyStr = ''
+    
+    for letters in str:
+        if letters in emptyStr:
+            return False
+        else:
+            emptyStr += letters
+    
+    return True
