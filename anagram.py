@@ -1,27 +1,26 @@
-def anagramTest(str1, str2):
+def anagramCheck2(str1, str2):
 
-    dict1 = {}
-    dict2 = {}
+    str1 = str1.replace(' ', '').lower()
+    str2 = str2.replace(' ', '').lower()
+
+    dictStr1 = {}
+    dictStr2 = {}
 
     for letters in str1:
 
-        if letters != ' ':
-
-            if letters in dict1:
-                dict1[letters] += 1
-            else:
-                dict1[letters] = 0
+        if letters not in dictStr1:
+            dictStr1[letters] = 1
+        else:
+            dictStr1[letters] += 1
 
     for letters in str2:
 
-        if letters != ' ':
+        if letters not in dictStr2:
+            dictStr2[letters] = 1
+        else:
+            dictStr2[letters] += 1
 
-            if letters in dict2:
-                dict2[letters] += 1
-            else:
-                dict2[letters] = 0
-
-    return (dict1 == dict2)
+    return (dictStr1 == dictStr2)
 
 
-print(anagramTest('apple', 'apple'))
+print(anagramCheck2('Apple is a god', 'Dog a is apple'))
