@@ -22,5 +22,3 @@ def anagramCheck2(str1, str2):
 
     return (dictStr1 == dictStr2)
 
-
-print(anagramCheck2('Apple is a god', 'Dog a is apple'))
