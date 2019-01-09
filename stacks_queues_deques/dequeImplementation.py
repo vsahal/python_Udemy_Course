@@ -14,10 +14,10 @@ class Deque(object):
     self.items.insert(0, item)
 
   def removeFront(self):
-    self.items.pop(item)
+    return self.items.pop()
 
   def removeRear(self):
-    self.items.pop(0)
+    return self.items.pop(0)
 
   def size(self):
     return len(self.items)
