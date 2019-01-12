@@ -24,3 +24,5 @@ def balanceCheck(s):
         return False
 
   return len(stack) == 0
+
+#look up other ways to do this implementing a stack
