@@ -12,6 +12,7 @@ def fib1(n):
 
   a = 0
   b = 1
+  
   for i in range(n):
     a, b = b, b + a
 
