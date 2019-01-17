@@ -14,4 +14,22 @@ class BinaryTree(object):
       self.leftChild = t
 
   def insertRight(self, newNode):
-    pass
+    if self.rightChild == None:
+      self.rightChild = BinaryTree(newNode)
+    else:
+      t = BinaryTree(newNode)
+      t.rightChild = se
+      f.rightChild
+      self.rightChild = t
+
+  def getRightChild(self):
+    return self.rightChild
+
+  def getLeftChild(self):
+    return self.leftChild
+
+  def setRootVal(self, obj):
+    self.key = obj
+
+  def getRootVal(self):
+    return self.key
