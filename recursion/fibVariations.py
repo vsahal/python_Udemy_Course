@@ -6,3 +6,13 @@ def fib1(n):
   else:
 
     return fib1(n - 1) + fib1(n - 2)
+
+  
+  def fib2(n):
+
+  a = 0
+  b = 1
+  for i in range(n):
+    a, b = b, b + a
+
+  return a
