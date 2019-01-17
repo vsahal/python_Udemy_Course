@@ -8,6 +8,7 @@ class BinaryTree(object):
   def insertLeft(self, newNode):
     if self.leftChild == None:
       self.leftChild = BinaryTree(newNode)
+
     else:
       t = BinaryTree(newNode)
       t.leftChild = self.leftChild
@@ -16,10 +17,10 @@ class BinaryTree(object):
   def insertRight(self, newNode):
     if self.rightChild == None:
       self.rightChild = BinaryTree(newNode)
+
     else:
       t = BinaryTree(newNode)
-      t.rightChild = se
-      f.rightChild
+      t.rightChild = self.rightChild
       self.rightChild = t
 
   def getRightChild(self):
