@@ -17,11 +17,12 @@ def balanceCheck(s):
     else:
       if len(stack) == 0:
         return False
-
-      lastOpen = stack.pop()
-
-      if (lastOpen, paren) not in matches:
-        return False
+      
+      else:
+        lastOpen = stack.pop()
+        
+        if (lastOpen, paren) not in matches:
+          return False
 
   return len(stack) == 0
 
