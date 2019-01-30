@@ -15,3 +15,7 @@ def reversedSentence1(str):
         i += 1
 
     return ' '.join(reversed(words))
+
+
+def reversedSentence2(str):
+    return ' '.join(x[::-1] for x in str.split())
