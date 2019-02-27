@@ -13,6 +13,3 @@ def maxSubArray(arr):
         maxSum = max(currentSum, maxSum)
 
     return maxSum
-
-
-# print(maxSubArray([1, 2, -1, 3, 4, 10, 10, -10, -1]))
